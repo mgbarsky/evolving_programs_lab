@@ -260,7 +260,7 @@ def main():
     print(lecture_tree.evaluate([2,3]))
     print(lecture_tree.evaluate([5, 3]))
 
-    return
+    
     print()
     print("Making random program with 2 parameters")
     rtree = make_random_tree(2)
@@ -286,7 +286,7 @@ def main():
     # pexp - the higher - the more elitist are selected
     # pnew - probability of new random program to be introduced
     sol = evolve(2, 500, rf, mutationrate=0.2, breedingrate=0.1, pexp=0.7, pnew=0.1)
-    print_expression(sol)
+    # print_expression(sol)
 
 
 if __name__ == "__main__":
